@@ -1,14 +1,16 @@
-<p id="notice"><%= notice %></p>
+<div class="blog-post">
+  <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @post.title %>
-</p>
+  <h2 class="blog-post-title"><%= @post.title %></h2>
+  <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
 
-<p>
-  <strong>Body:</strong>
-  <%= @post.body %>
-</p>
+  <p><%= @post.body %></p>
+  <hr>
+
+
+
+</div><!-- /.blog-main -->
+
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
 <%= link_to 'Back', posts_path %>
